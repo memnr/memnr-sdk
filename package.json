@@ -1,0 +1,36 @@
+{
+  "name": "@memnr/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the memnr platform — launch TikTok memecoins, read token data, and claim fees programmatically.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.87.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/memnr/memnr-sdk"
+  },
+  "keywords": ["memnr", "solana", "memecoin", "tiktok", "meteora", "sdk"]
+}
